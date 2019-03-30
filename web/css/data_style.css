@@ -1,0 +1,91 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+body,html{
+    width:100%;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    background: #f0f0f4;
+    font-family: "微软雅黑";
+}
+
+.data-danger{
+    color:red;
+}
+
+#dataShow{
+    width: 99%;
+    margin-left: 1%;
+    margin-top: 15px;
+}
+
+
+#dataShow .selection{
+    width: 100%;
+}
+
+#dataShow .selection .form-group{
+    width: 30%;
+}
+
+#dataShow .selection .form-group input,#dataShow .selection .form-group select{
+    margin-left: 15px;
+    width: 70%;
+}
+
+#dataShow .selection .form-group-lg{
+    margin-top: 20px;
+}
+
+#dataShow .selection .form-group-lg .checkbox-inline{
+    margin-left: 25px;
+}
+
+#dataShow .content{
+    width: 98%;
+    position: relative;
+    z-index: 50;
+}
+
+#dataShow .content table td,#dataShow .content table th{
+    text-align: center;
+}
+
+#dataShow .selection button{
+    position: relative;
+    left:92%;
+}
+
+#dataShow .content .pageMenu{
+    width: 100%;
+    height:40px;
+    text-align: right;
+}
+
+#dataShow .content .pageMenu a{
+    width: 80px;
+    float: right;
+    margin-right: 15px;
+}
+
+.exportMenu{
+    width: 180px;
+    background: white;
+    border: 1px solid rgba(119, 119, 119, 0.38);
+    position: absolute;
+    display:none;
+    z-index: 100;
+    padding-top: 10px;
+    left:76%;
+}
+
+.exportMenu ul li{
+    list-style: none;
+    height: 40px;
+    padding-left: 25px;
+    margin-top: 5px;
+    padding-top: 5px;
+    cursor: pointer;
+}

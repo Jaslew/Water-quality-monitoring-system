@@ -1,0 +1,97 @@
+<!-- Page, data-name contains page name which can be used in page callbacks -->
+<div id="useradd" class="page" data-name="useradd">
+    <div class="navbar">
+        <div class="navbar-inner sliding">
+            <div class="left">
+                <a href="/system/user/" class="link">
+                    <i class="icon icon-back"></i>
+                    <span class="ios-only">返回</span>
+                </a>
+            </div>
+            <div class="title">新增用户</div>
+        </div>
+    </div>
+    <div class="page-content">
+        <form class="list" id="useradd-form">
+            <ul>
+                <li>
+                    <div class="item-content item-input">
+                        <div class="item-inner">
+                            <div class="item-title item-label">用户名</div>
+                            <div class="item-input-wrap">
+                                <input type="text" name="name" placeholder="请输入用户名(必需)">
+                                <span class="input-clear-button"></span>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="item-content item-input">
+                        <div class="item-inner">
+                            <div class="item-title item-label">电话</div>
+                            <div class="item-input-wrap">
+                                <input type="tel" name="tel" placeholder="请输入联系电话(可选)">
+                                <span class="input-clear-button"></span>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="item-content item-input">
+                        <div class="item-inner">
+                            <div class="item-title item-label">邮箱</div>
+                            <div class="item-input-wrap">
+                                <input type="email" name="email" placeholder="请输入联系邮箱(可选)">
+                                <span class="input-clear-button"></span>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="item-content item-input">
+                        <div class="item-inner">
+                            <div class="item-title item-label">密码</div>
+                            <div class="item-input-wrap">
+                                <input type="password" name="password" placeholder="请输入登录密码(必需)">
+                                <span class="input-clear-button"></span>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="item-content item-input">
+                        <div class="item-inner">
+                            <div class="item-title item-label">角色</div>
+                            <div class="item-input-wrap">
+                                <label class="item-radio item-content">
+                                    <input type="radio" name="roleid" value="3" checked />
+                                    <i class="icon icon-radio"></i>
+                                    <div class="item-inner">
+                                        <div class="item-title">普通用户</div>
+                                    </div>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item-content item-input">
+                        <div class="item-inner">
+                            <div class="item-input-wrap">
+                                <label class="item-radio item-content">
+                                    <input type="radio" name="roleid" value="2"/>
+                                    <i class="icon icon-radio"></i>
+                                    <div class="item-inner">
+                                        <div class="item-title">普通管理员</div>
+                                    </div>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </form>
+        <div class="block block-strong">
+            <button id="userAddDo" class="button button-fill">提交</button>
+        </div>
+        <br>
+    </div>
+</div>

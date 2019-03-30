@@ -1,0 +1,48 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+body,html{
+    width:100%;
+    background: #f0f0f4;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    font-family: "微软雅黑";
+}
+
+#swInfo{
+    width: 98%;
+    margin-left: 1%;
+    margin-top: 15px;
+    display: none;
+}
+
+.control-select{
+    width: 98%;
+    margin-left: 1%;
+    margin-top: 15px;
+    height: 50px;
+}
+
+.control-select span{
+    margin-left: 25px;
+    cursor: pointer;
+}
+
+.control-switch{
+    width: 98%;
+    height: 45px;
+    margin-left: 1%;
+    margin-top: 15px;
+}
+
+.control-switch ul{
+    list-style: none;
+}
+
+.control-switch ul li{
+    float: left;
+    width: 25%;
+}
+

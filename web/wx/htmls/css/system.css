@@ -1,0 +1,41 @@
+.site-card .card-content, .user-card .card-content{
+    display: block;
+    padding: 10px;
+}
+.site-card .site-avatar, .user-card .user-avatar{
+    float: left;
+}
+.site-card .site-name, .user-card .user-name {
+    margin-left: 44px;
+    font-size: 14px;
+    font-weight: 500;
+}
+.site-card .site-date, .user-card .user-date {
+    margin-left: 44px;
+    font-size: 13px;
+    color: #8e8e93;
+}
+
+#siteupdate #siteupdate-form,#userupdate #userupdate-form{
+    margin: 0 !important;
+}
+
+#siteadd form, #useradd form{
+    margin: 0 !important;
+}
+
+#usershow tbody img{
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+}
+
+#system #site .site-avatar span i:nth-of-type(1){
+    color: #007affb3;
+}
+
+#system #user img{
+    width: 2.25rem;
+    height: 2.25rem;
+    border-radius: 50%;
+}

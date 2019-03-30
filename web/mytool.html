@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>tool</title>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript">
+ function encrypt(){   
+	 	var text = $("#a").val();
+        $.ajax({
+		url:'includes/mytoolProcess.php',
+		type:'POST', //POST
+		async:true,    //或false,是否异步
+		timeout:5000,    //超时时间
+		data: {'type':'1','text':text},
+		dataType:'text',    //返回的数据格式：json/xml/html/script/jsonp/text
+		success:function(data,textStatus,jqXHR){
+		    $("#b").html("("+data+")");
+		},
+		error:function(usxhr,textStatus){
+		    alert(textStatus);
+		},
+		complete:function(){
+			
+		}
+   	 });
+}
+ 
+ function decrypt(){
+     var text = $("#a").val();
+     $.ajax({
+        url:'includes/mytoolProcess.php',
+		type:'POST', //POST
+		async:true,    //或false,是否异步
+		timeout:5000,    //超时时间
+		data: {'type':'2','text':text},
+		dataType:'text',    //返回的数据格式：json/xml/html/script/jsonp/text
+		success:function(data,textStatus,jqXHR){
+		    $("#b").html(data);
+		},
+		error:function(usxhr,textStatus){
+		    alert(textStatus);
+		},
+		complete:function(){
+			
+		}
+	 });
+}
+         
+</script>
+</head>
+<body> 
+      <textarea id="a" rows="7" cols="100"></textarea><br>
+      <button onclick="encrypt()">加密</button>
+      <button onclick="decrypt()">解密</button><br>
+      <textarea id="b" rows="7" cols="100"></textarea>
+</body>
+</html>

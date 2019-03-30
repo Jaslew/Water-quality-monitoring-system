@@ -1,0 +1,112 @@
+<!-- Page, data-name contains page name which can be used in page callbacks -->
+<div id="graph" class="page" data-name="graph">
+    <div class="navbar">
+        <div class="navbar-inner">
+            <div class="left"></div>
+            <div class="title">数据报表</div>
+            <div class="right"></div>
+        </div>
+    </div>
+    <!-- Scrollable page content -->
+    <div class="page-content">
+        <form id="graph-input">
+            <div class="card">
+                <div class="list">
+                    <ul>
+                        <li>
+                            <a class="item-link smart-select smart-select-init" data-open-in="popover">
+                                <div class="item-content">
+                                    <div class="item-inner">
+                                        <div class="item-title">选择站点</div>
+                                    </div>
+                                </div>
+                                <select name="site"></select>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="item-link smart-select smart-select-init" data-open-in="popover">
+                                <div class="item-content">
+                                    <div class="item-inner">
+                                        <div class="item-title">选择指标</div>
+                                    </div>
+                                </div>
+                                <select name="param">
+                                    <option value="tm" selected>温度</option>
+                                    <option value="ph">PH</option>
+                                    <option value="ox">溶解氧</option>
+                                    <option value="el">电导率</option>
+                                    <option value="nt">浊度</option>
+                                    <option value="cl">氯含量</option>
+                                    <option value="po">总磷</option>
+                                    <option value="nh">氨氮</option>
+                                    <option value="ca">碳含量</option>
+                                </select>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="item-link smart-select smart-select-init" data-open-in="popover">
+                                <div class="item-content">
+                                    <div class="item-inner">
+                                        <div class="item-title">查询方式</div>
+                                    </div>
+                                </div>
+                                <select name="querytype">
+                                    <option value="h">按时查询</option>
+                                    <option value="d">按日查询</option>
+                                    <option value="m">按月查询</option>
+                                    <option value="y">按年查询</option>
+                                </select>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="list no-hairlines-md">
+                    <ul>
+                        <li>
+                            <div class="item-content item-input">
+                                <div class="item-inner">
+                                    <div class="item-input-wrap">
+                                        <input name="time" type="text" placeholder="选择时间范围" readonly="readonly" id="calendar-range"/>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </form>
+        <div class="card">
+            <canvas id="myChart"></canvas>
+        </div>
+        <div id="graph-info" class="card">
+            <div class="list">
+                <ul>
+                    <li>
+                        <div class="item-content">
+                            <div class="item-inner">
+                                <div class="item-title">最高值</div>
+                                <div class="item-after"> 23.5</div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="item-content">
+                            <div class="item-inner">
+                                <div class="item-title">平均值</div>
+                                <div class="item-after"> 23.5</div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="item-content">
+                            <div class="item-inner">
+                                <div class="item-title">最低值</div>
+                                <div class="item-after"> 23.5</div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,13 @@
+//同一管理组在同一时间只允许一个用户保持在线(web端除外)
+
+//fd,id映射表
+表名 :   fdtoid
+格式 : fd => id
+
+//hash路由表
+表名 : 	id                     //当前用户的 id,不一定是终极 id
+格式 :	'ky' => ky            //当前用户的密码，不一定是终极密码
+		'fd' => fd
+		no1 => ip:port:time
+		no2 => ip:port:time
+		

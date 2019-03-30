@@ -1,0 +1,101 @@
+<!-- Page, data-name contains page name which can be used in page callbacks -->
+<div id="siteadd" class="page" data-name="siteadd">
+    <div class="navbar">
+        <div class="navbar-inner sliding">
+            <div class="left">
+                <a href="/system/" class="link">
+                    <i class="icon icon-back"></i>
+                    <span class="ios-only">返回</span>
+                </a>
+            </div>
+            <div class="title">新建站点</div>
+        </div>
+    </div>
+    <div class="page-content">
+        <form id="siteadd-form" class="list">
+            <ul>
+                <li>
+                    <div class="item-content item-input">
+                        <div class="item-inner">
+                            <div class="item-title item-label">站点号</div>
+                            <div class="item-input-wrap">
+                                <input type="text" name="no" placeholder="请输入三位数站点号(必需)">
+                                <span class="input-clear-button"></span>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="item-content item-input">
+                        <div class="item-inner">
+                            <div class="item-title item-label">站点名</div>
+                            <div class="item-input-wrap">
+                                <input type="text" name="name" placeholder="请输入站点名(必需)">
+                                <span class="input-clear-button"></span>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="item-content item-input">
+                        <div class="item-inner">
+                            <div class="item-title item-label">地理位置</div>
+                            <div class="item-input-wrap">
+                                <input type="text" name="pos" placeholder="请输入站点位置(可选)">
+                                <span class="input-clear-button"></span>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="item-content item-input">
+                        <div class="item-inner">
+                            <div class="item-title item-label">负责人</div>
+                            <div class="item-input-wrap">
+                                <input type="text" name="charge" placeholder="请输入负责人(可选)">
+                                <span class="input-clear-button"></span>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="item-content item-input">
+                        <div class="item-inner">
+                            <div class="item-title item-label">电话</div>
+                            <div class="item-input-wrap">
+                                <input type="tel" name="tel" placeholder="请输入联系电话(可选)">
+                                <span class="input-clear-button"></span>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="item-content item-input">
+                        <div class="item-inner">
+                            <div class="item-title item-label">邮箱</div>
+                            <div class="item-input-wrap">
+                                <input type="email" name="email" placeholder="请输入联系邮箱(可选)">
+                                <span class="input-clear-button"></span>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="item-content item-input">
+                        <div class="item-inner">
+                            <div class="item-title item-label">采样频率(s/次)</div>
+                            <div class="item-input-wrap">
+                                <input type="text" name="hz" placeholder="请输入采样频次(必需)">
+                                <span class="input-clear-button"></span>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </form>
+        <div class="block block-strong">
+            <button id="siteAddDo" class="button button-fill">提交</button>
+        </div>
+        <br>
+    </div>
+</div>

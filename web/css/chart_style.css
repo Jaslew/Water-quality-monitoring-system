@@ -1,0 +1,75 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+body,html{
+    width:100%;
+    background: #f0f0f4;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    font-family: "微软雅黑";
+}
+
+.errorInfo{
+    width: 98%;
+    margin-left: 1%;
+    margin-top: 15px;
+}
+
+.selection{
+    width: 98%;
+    height:100px;
+    margin-left: 1%;
+    margin-top: 15px;
+}
+
+.selection .form-group{
+    width: 30%;
+}
+
+.selection .form-group input, .selection .form-group select{
+    margin-left: 15px;
+    width: 70%;
+}
+
+.selection .form-group:nth-of-type(4){
+    margin-top: 15px;
+}
+
+.selection .form-group-lg{
+    margin-top: 20px;
+}
+
+.selection .form-group-lg .checkbox-inline{
+    margin-left: 15px;
+}
+
+.content{
+    width: 95%;
+    height:500px;
+    margin-left: 2%;
+    margin-top: 30px;
+    text-align: center;
+}
+.content .cbox{
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.content .cbox #myChart{
+    height:100% !important;
+}
+
+.content .chartInfo{
+    width: 100px;
+    position: absolute;
+    top:18%;
+    right:0;
+}
+
+.content .chartInfo p{
+    font-size: 10px;
+}

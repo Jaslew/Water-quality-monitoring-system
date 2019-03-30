@@ -1,0 +1,37 @@
+<!-- Page, data-name contains page name which can be used in page callbacks -->
+<div id="system" class="page" data-name="system">
+    <div class="navbar">
+        <div class="navbar-inner">
+            <div class="left"></div>
+            <div class="title">系统管理</div>
+            <div class="right"></div>
+            <div class="subnavbar">
+                <div class="subnavbar-inner">
+                    <div class="segmented segmented-raised">
+                        <a class="button tab-link" href="./" data-route-tab-id="site">站点管理</a>
+                        <a class="button tab-link" href="./user/" data-route-tab-id="user">用户管理</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--新增按钮-->
+    <div class="fab fab-right-bottom">
+        <a href = "#">
+            <!-- Icons For iOS Theme -->
+            <i class="icon f7-icons ios-only">add</i>
+            <i class="icon f7-icons ios-only">close</i>
+            <!-- Icons For MD Theme -->
+            <i class="icon material-icons md-only">add</i>
+            <i class="icon material-icons md-only">close</i>
+        </a>
+    </div>
+    <div class="tabs tabs-routable">
+        <div class="tab page-content" id="site">
+            <!--站点-->
+        </div>
+        <div class="tab page-content" id="user">
+            <!--用户-->
+        </div>
+    </div>
+</div>
