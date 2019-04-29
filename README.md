@@ -17,3 +17,6 @@ log--服务器状态和错误日志。
 web--网站前端和后台代码。  
 doc--手机app和下位机开发接口文档。  
 server.php--服务器启动程序。  
+
+#docker
+docker pull jaslew2019/i-centos:v1
