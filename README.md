@@ -8,16 +8,16 @@
 3.可添加或删除多个站点管理员，实现权限控制。  
 4.可对下位机预留的开关实现远程实时控制。  
 
-## 服务器基本环境:  
+## 服务器基本环境  
 php7(必要模块：mysqli,gd(支持jpeg),mcrypt,redis,swoole),apache,mysql,swoole,redis。
 
-## 根目录：  
-config--包含服务器配置，数据库以及其它配置信息。  
+## 根目录  
+configs--包含服务器配置，数据库以及其它配置信息。  
 includes--服务器核心php代码。  
 log--服务器状态和错误日志。  
 web--网站前端和后台代码。  
 doc--手机app和下位机开发接口文档。  
 server.php--服务器启动程序。  
 
-## Docker Hub
+## Docker Hub  
 https://hub.docker.com/u/jaslew2019  
