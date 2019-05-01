@@ -23,7 +23,7 @@ create table admin(
   lasttime int unsigned,
   header varchar(32),
   tel varchar(16),
-  email varchar(16),
+  email varchar(32),
   foreign key(belongid) references role(belongid)
     on delete cascade
     on update cascade,
@@ -42,8 +42,8 @@ create table station(
   atime int unsigned,
   ctime int unsigned,
   tel varchar(16),
-  email varchar(16),
-  charge varchar(16),
+  email varchar(32),
+  charge varchar(32),
   tag1 tinyint default 0,
   tag2 tinyint default 0,
   foreign key(belongid) references role(belongid)
