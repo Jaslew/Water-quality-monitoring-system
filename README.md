@@ -19,5 +19,15 @@ web--网站前端和后台代码。
 doc--手机app和下位机开发接口文档。  
 server.php--服务器启动程序。   
 
-## Docker Hub
-https://hub.docker.com/r/jaslew2019/icentos
+## Docker Hub  
+https://hub.docker.com/r/jaslew2019/icentos  
+此镜像已经集成了所需的全部环境，pull之后，run一个实例就可以直接部署   
+
+## 界面效果
+### 主界面
+![avatar](https://s2.ax1x.com/2019/12/06/QJlxoT.png)
+
+### 数据报表
+![avatar](https://s2.ax1x.com/2019/12/06/QJ1PSJ.png)
+
+![avatar](https://s2.ax1x.com/2019/12/06/QJ1il9.png)
